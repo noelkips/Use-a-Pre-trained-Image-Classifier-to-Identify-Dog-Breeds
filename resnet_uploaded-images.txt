@@ -1,0 +1,82 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+{'Chair_01.jpg': ['chair']}
+{'Chair_01.jpg': ['chair'], 'Frog_01.jpg': ['frog']}
+{'Chair_01.jpg': ['chair'], 'Frog_01.jpg': ['frog'], 'Dog_02.jpg': ['dog']}
+{'Chair_01.jpg': ['chair'], 'Frog_01.jpg': ['frog'], 'Dog_02.jpg': ['dog'], 'Dog_01.jpg': ['dog']}
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                   Chair_01.jpg  label:                      chair
+ 2 key:                    Frog_01.jpg  label:                       frog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                  Chair_01.jpg: 
+Real:                      chair   Classifier:                  folding chair
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                  Chair_01.jpg: 
+Real:                      chair   Classifier:                  folding chair  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                   Frog_01.jpg: 
+Real:                       frog   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  0  N NotDog Images:  4 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  0  N NotDog Images:  4 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   0
+N Not-Dog Images    :   4
+#
+summary statistics (percentages)
+
+
+pct_match: 50.0
+
+pct_correct_dogs: 0.0
+
+pct_correct_breed: 0.0
+
+pct_correct_notdogs: 100.0
+
+** Total Elapsed Runtime: 0:0:1
