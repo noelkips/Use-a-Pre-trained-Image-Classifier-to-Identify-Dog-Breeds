@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Noel k. Langat
 # DATE CREATED:   11/09/2022                             
-# REVISED DATE:   
+# REVISED DATE:   02/10/2022  
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
 #          labels to the pet image labels. This function inputs:
@@ -69,13 +69,10 @@ def classify_images(images_dir, results_dic, model):
     # that indicates the folder and the filename (key) to be used in the 
     # classifier function
     for key in results_dic:
-       model_classified_label = classifier(images_dir +key, model)
-       lowercase_model_label = model_classified_label.lower()
-       model_label_stripped=lowercase_model_label.strip()
-       model_label=model_label_stripped 
+       model_classified_label = classifier(images_dir +key, model).lower().strip()
        truth = results_dic[key][0]
-       if truth in model_label:
-            results_dic[key].extend((model_label,1))
+       if truth in model_classified_label:
+            results_dic[key].extend((model_classified_label,1))
        else:
-            results_dic[key].extend((model_label,0))
+            results_dic[key].extend((model_classified_label,0))
        

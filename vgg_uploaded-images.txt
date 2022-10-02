@@ -46,37 +46,41 @@ PetLabelDog: 0  ClassLabelDog: 0
 
                     Dog_02.jpg: 
 Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker  
-PetLabelDog: 0  ClassLabelDog: 0
+PetLabelDog: 1  ClassLabelDog: 1
 
                     Dog_01.jpg: 
 Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker  
-PetLabelDog: 0  ClassLabelDog: 0
+PetLabelDog: 1  ClassLabelDog: 1
 
 # Total Images 4 # Matches: 2 # NOT Matches: 2
 
  ** Statistics from calculates_results_stats() function:
-N Images:  4  N Dog Images:  0  N NotDog Images:  4 
-Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
  ** Check Statistics - calculated from this function as a check:
-N Images:  4  N Dog Images:  0  N NotDog Images:  4 
-Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
 
 *** Results Summary for CNN Model Architecture VGG ***
 N Images            :   4
-N Dog Images        :   0
-N Not-Dog Images    :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
 #
 summary statistics (percentages)
 
 
 pct_match: 50.0
 
-pct_correct_dogs: 0.0
+pct_correct_dogs: 100.0
 
 pct_correct_breed: 0.0
 
 pct_correct_notdogs: 100.0
 
-** Total Elapsed Runtime: 0:0:4
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker
+Real:                        dog   Classifier: cocker spaniel, english cocker spaniel, cocker
+
+** Total Elapsed Runtime: 0:0:6
